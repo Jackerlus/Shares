@@ -11,12 +11,12 @@ public class Sterling {
         return value;
     }
 
-    public double add(double addition) {
-        return value + addition;
+    public void add(double addition) {
+        value += addition;
     }
 
-    public double percentageChange(double percentage) {
+    public void percentageChange(double percentage) {
         double val = percentage / 100;
-        return value * (1 + val);
+        value *= (1 + val);
     }
 }
