@@ -9,4 +9,16 @@ public class ShareHolding {
         price = initialPrice;
         quantity = initialQty;
     }
+
+    public void changePrice(double newPrice) {
+    	price = newPrice;
+    }
+
+    public void changeQty(int newQty) {
+    	quantity = newQty;
+    }
+
+    public double getValue() {
+    	return quantity*price;
+    }
 }
