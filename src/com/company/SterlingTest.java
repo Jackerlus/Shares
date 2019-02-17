@@ -19,8 +19,7 @@ public class SterlingTest {
     public void testAdd(double addition) {
         Sterling value;
         value = new Sterling(1.4);
-        value.add(5);
 
-        Assertions.assertEquals(1.4+5, 6.4);
+        Assertions.assertEquals(1.4+5, value.getValue());
     }
 }
